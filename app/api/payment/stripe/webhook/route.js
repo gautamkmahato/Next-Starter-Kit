@@ -1,6 +1,7 @@
 import Stripe from 'stripe';
-import { supabase } from '../../lib/supabaseClient'; // Adjust the import path as needed
-import { generateUuid } from '../../lib/uuid'; // Optional: Helper function for generating UUID
+import supabase from '@/configs/supabaseConfig';
+import generateUuid from '@/utils/generateUuid';
+
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: '2022-08-01' });
 

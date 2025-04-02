@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
-import supabase from '@/configs/supabaseConfig';
 import generateUuid from '@/utils/generateUuid';
+import supabase from '@/configs/supabaseConfig';
+
+
 
 export async function POST(request) {
   try {

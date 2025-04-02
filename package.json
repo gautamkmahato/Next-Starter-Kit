@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.12.12",
     "@clerk/themes": "^2.2.26",
+    "@supabase/supabase-js": "^2.49.4",
     "axios": "^1.8.4",
     "lucide-react": "^0.486.0",
     "next": "15.2.4",

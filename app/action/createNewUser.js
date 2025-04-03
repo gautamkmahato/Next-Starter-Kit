@@ -1,7 +1,8 @@
 'use server'
 
 export default async function createNewUser(inputData){
-    const response = await fetch('https://tts-backend.vercel.app/api/v1/user', {
+    console.log("input data from create user: ", inputData)
+    const response = await fetch('http://localhost:3000/api/add-user', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'

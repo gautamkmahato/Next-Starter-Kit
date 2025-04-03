@@ -9,7 +9,7 @@ export async function POST(request) {
     const inputData = await request.json();
     console.log(inputData);
 
-    const uuid = generateUuid();
+    const uuid = generateUuid(); 
 
     const { data, error } = await supabase
       .from('users')

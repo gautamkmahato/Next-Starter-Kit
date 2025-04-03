@@ -51,17 +51,17 @@ export async function POST(req) {
   const eventType = evt.type
   console.log(`Received webhook with ID ${id} and event type of ${eventType}`)
   //console.log('Webhook payload:', body);
-  console.log("===================================================")
-  console.log(payload["data"]["email_addresses"][0]["email_address"]);
+  //console.log("===================================================")
+  //console.log(payload["data"]["email_addresses"][0]["email_address"]);
 
   const fullName = payload.data.first_name + " " + payload.data.last_name;
 
-  const inputData = { 
+  const inputData = {  
     id: id,
-    username: payload.data.username,
+    username: payload.data?.username,
     email: payload["data"]["email_addresses"][0]["email_address"],
     fullName: fullName,
-    image: payload.data.profile_image_url
+    image: payload.data?.profile_image_url
   }
 
   console.log(inputData);

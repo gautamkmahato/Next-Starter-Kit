@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import generateUuid from '@/utils/generateUuid';
 import supabase from '@/configs/supabaseConfig';
+import generateUuid from '@/lib/utils/generateUuid';
 
 
 
